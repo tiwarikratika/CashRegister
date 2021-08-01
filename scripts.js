@@ -34,7 +34,7 @@ checkbtn.addEventListener("click",()=>{
   console.log(cashg.value);
   console.log(bill.value);
   console.log(amounttoreturn);
-  if(cashg.value<bill.value)
+  if(Number(cashg.value)<Number(bill.value))
   {
     gif.style.display = "block";
     errormsg2.innerText = "I guess you will have to wash plates";

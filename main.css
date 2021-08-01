@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 :root{
     --primary-color:#064E3B;
     --seconndary-color:#F9FAFB;
+    background-color: #94dbc1;
+    font-family: 'Acme', sans-serif;
 }
 
 .container{
-    border: 1px solid black;
+  
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: auto auto;
-    padding-top: 4%;
-    padding-bottom: 5%;
-    margin-top: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 4%;
     background-color: var(--primary-color);
     
 }
@@ -36,22 +40,32 @@
 
 }
 .message{
-    font-size: 32px;
-    
+    font-size: 32px;   
 }
 
 input{
     height: 40px;
     width: 70%;
-    color: yellowgreen;
+    color: black;
 }
-.btn1, .btn2, .btn3{
+.btn1{
+    background-color: #94dbc1;
+    font-size: 40px;
+    border-radius: 80%;
+    border:none;
+
+}
+.btn2, .btn3{
     width: 40%;
     height: 40px;
     background-color: #94dbc1;
     font-size: 20px;
     border: none;
 
+
+}
+.btn1,.btn2,:hover{
+    cursor: pointer;
 }
 
 #error1, #error2{
@@ -62,3 +76,22 @@ input{
 #plateswash-gif{
     margin: auto auto;
 }
+
+.notes-table{
+    font-size: 17px;
+    
+    color: white;
+    margin:auto auto;
+    margin-top: 4%;
+    border: 1px solid white;
+}
+.note{
+    padding-right:0.4rem;
+   
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      margin-top: 10%;
+    }
+  }
